@@ -1,9 +1,14 @@
+//
+// Patched by fluffywaffles on 9/21/2023. Explicitly #include <cstdint>
+//
+
 #include <iostream>
 #include <libusb.h>
 #include <set>
 #include <vector>
 #include <unordered_map>
 #include <curses.h>
+#include <cstdint>
 
 #include "UltrafineDisplay.h"
 
