@@ -1,0 +1,39 @@
+diff --git a/Brightness.h b/Brightness.h
+index 76cf3ad..dd3e9d0 100644
+--- a/Brightness.h
++++ b/Brightness.h
+@@ -1,5 +1,6 @@
+ //
+ // Created by nagato on 9/9/20.
++// Patched by fluffywaffles on 9/21/2023. Explicitly #include <cstdint>
+ //
+ 
+ #ifndef LG_ULTRAFINE_BRIGHTNESS__BRIGHTNESS_H_
+@@ -7,6 +8,8 @@
+ 
+ #include <iostream>
+ #include <vector>
++#include <cstdint>
++
+ class Brightness {
+  public:
+   static const uint16_t max_brightness = 0xd2f0; // max brightness 54000
+diff --git a/main.cpp b/main.cpp
+index 3b5562e..339d80f 100644
+--- a/main.cpp
++++ b/main.cpp
+@@ -1,9 +1,14 @@
++//
++// Patched by fluffywaffles on 9/21/2023. Explicitly #include <cstdint>
++//
++
+ #include <iostream>
+ #include <libusb.h>
+ #include <set>
+ #include <vector>
+ #include <unordered_map>
+ #include <curses.h>
++#include <cstdint>
+ 
+ #include "UltrafineDisplay.h"
+ 
